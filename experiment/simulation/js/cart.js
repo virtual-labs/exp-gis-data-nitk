@@ -181,7 +181,7 @@ function setTitle(){
     </div>
     <div class="titleContent">
       <p>What title would you like to give your map?</p>
-      <input type="text" id="cartTitle" />
+      <input type="text" id="cartTitle" maxlength = "12"/>
       <div class="titleButton">
         <input class="OK" type="button" value="OK" onclick="setDragTitle(event)"/>
         <input class="cancel" type="button" value="Cancel" onclick="closeModal(event)"/>
