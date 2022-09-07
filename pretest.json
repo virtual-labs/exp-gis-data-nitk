@@ -1,0 +1,108 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "The distance covered by one degree of latitude is_____.",
+      "answers": {
+        "a": "69km",
+        "b": "68m",
+        "c": "79km",
+        "d": "69miles"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the equivalence of one degree of longitude?",
+      "answers": {
+        "a": "54.6 miles",
+        "b": "52 miles",
+        "c": "30 miles",
+        "d": "25 miles"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of these maps depicts the Earth as spherical?",
+      "answers": {
+        "a": "Blauver map",
+        "b": "Thematic maps",
+        "c": "Globe",
+        "d": "Topo map"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Longitudinal line is also called as _____ .",
+      "answers": {
+        "a": "Reference line",
+        "b": "Meridian",
+        "c": "Parallel",
+        "d": "Middle line"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A person who designs maps is called ___ .",
+      "answers": {
+        "a": " Cartographe",
+        "b": "Cartographer",
+        "c": "Mapper",
+        "d": "Spotter"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What does the abbreviation GPS stand for?",
+      "answers": {
+        "a": "Global Positioning System",
+        "b": "Global Point Selection",
+        "c": "Geographical Point Software",
+        "d": "Geographical Position System"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    }
+
+  ]
+}

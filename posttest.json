@@ -1,0 +1,104 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which cartography maps show the oceans and continents of the world?",
+      "answers": {
+        "a": "Physical",
+        "b":  "Population density",
+        "c":  "Political",
+        "d":  "Tidal"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The amount of information to be represented on the map depends on __.",
+      "answers": {
+        "a": "Scale",
+        "b":  "Projection",
+        "c":  "None of the above",
+        "d":  "All of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The cadastral maps, topographical maps and the city plans come under the category of ____.",
+      "answers": {
+        "a": "Large scale maps",
+        "b":  "Medium scale maps",
+        "c":  "Small scale maps",
+        "d":  "All of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "When different objects are shown by various colours, the map is known as",
+      "answers": {
+        "a": "Choro-schematic",
+        "b":  "Chorochromatic",
+        "c":  "Choropleth",
+        "d":  "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+     "question": "What does 1mm on a map drawn at a scale of 1:50,000 represent on the ground?",
+     "answers": {
+       "a": "500 centimetres",
+       "b":  "5 metres",
+       "c":  "50 centimetres",
+       "d":  "50 metres"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "The Prime Meridian runs through Moscow.",
+      "answers": {
+        "a": "True",
+        "b":  "False"
+      },
+      "explanations": {
+        "a": "",
+        "b": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    }
+
+  ]
+}
