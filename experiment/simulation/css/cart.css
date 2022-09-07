@@ -489,36 +489,65 @@ input[type="button"]{
 	border: 3px dotted #f31b1b;
 	padding: 5px;
 	visibility: hidden;
+	font-size: 14px;
  }
  #boxNorthArrow { 
-	position:fixed;
+	/* position:absolute;
 	left: 530px;
 	top: 110px;
 	width: 50px;
 	height: 60px;
 	border: 3px dotted #f31b1b;
 	display: inline-block; 
+	visibility: hidden; */
+	position: absolute;
+	left: 75%;
+	margin-left: -70px;
+	top: 15%; 
+	margin-top: -10px; 
+	border: 3px dotted #f31b1b;
+	padding: 5px;
 	visibility: hidden;
+	font-size: 14px;
+
 }
 #boxScaleBar { 
-	position:fixed;
+	/* position:absolute;
 	left: 430px;
 	top: 480px;
 	width:150px; 
 	height:30px;
 	border: 3px dotted #f31b1b;
 	display: inline-block; 
+	visibility: hidden; */
+	position: absolute;
+	left: 60%;
+	margin-left: -80px;
+	top: 80%; 
+	margin-top: -10px; 
+	border: 3px dotted #f31b1b;
+	padding: 5px;
 	visibility: hidden;
+	font-size: 14px;
+
 }
 
 #boxLegend { 
-	position:fixed;
+	/* position:absolute;
 	left: 310px;
 	top: 450px;
 	width:80px; 
 	height:60px;
 	border: 3px dotted #f31b1b;
 	display: inline-block; 
+	visibility: hidden; */
+	position: absolute;
+	left: 25%;
+	margin-left: -20px;
+	top: 80%; 
+	margin-top: -10px; 
+	border: 3px dotted #f31b1b;
+	padding: 5px;
 	visibility: hidden;
 }
   
