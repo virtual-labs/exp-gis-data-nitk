@@ -10,10 +10,10 @@
         "d": "69miles"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "One degree of latitude equals approximately 364,000 feet (69 miles), ",
+        "b": "One degree of latitude equals approximately 364,000 feet (69 miles), ",
+        "c": "One degree of latitude equals approximately 364,000 feet (69 miles), ",
+        "d": "Correct Answer. One degree of latitude equals approximately 364,000 feet (69 miles), "
       },
       "correctAnswer": "d",
       "difficulty": "intermediate"
@@ -27,10 +27,10 @@
         "d": "25 miles"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Correct Answer. One-degree of longitude equals 288,200 feet (54.6 miles)",
+        "b": "One-degree of longitude equals 288,200 feet (54.6 miles)",
+        "c": "One-degree of longitude equals 288,200 feet (54.6 miles)",
+        "d": "One-degree of longitude equals 288,200 feet (54.6 miles)"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -45,9 +45,9 @@
       },
       "explanations": {
         "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "b": "A thematic map is a type of map that portrays the geographic pattern of a particular subject matter (theme) in a geographic area.",
+        "c": "Correct Answer. Globes serve purposes similar to maps, but unlike maps, they do not distort the surface that they portray ",
+        "d": "Topographic maps are detailed, accurate graphic representations of features that appear on the Earth's surface. "
       },
       "correctAnswer": "c",
       "difficulty": "advanced"
@@ -61,10 +61,10 @@
         "d": "Middle line"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The primary reference line of latitude is the Equator, and the primary reference line of longitude is the Prime Meridian.",
+        "b": "Correct Answer. Lines of longitude, also called meridians, are imaginary lines that divide the Earth.",
+        "c": "Lines of latitude, also called parallels, are imaginary lines that divide the Earth.",
+        "d": "Middle line is the Equator, invisible line that runs around the center of the Earth at 0 degrees latitude"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -72,16 +72,16 @@
     {
       "question": "A person who designs maps is called ___ .",
       "answers": {
-        "a": " Cartographe",
+        "a": "Cartographe",
         "b": "Cartographer",
         "c": "Mapper",
         "d": "Spotter"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Cartographer is a person who draws or produces maps",
+        "b": "Correct Answer. Cartographer is a person who draws or produces maps.",
+        "c": "Cartographer is a person who draws or produces maps",
+        "d": "Cartographer is a person who draws or produces maps"
       },
       "correctAnswer": "b",
       "difficulty": "advanced"
@@ -95,10 +95,10 @@
         "d": "Geographical Position System"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Correct Answer. GPS is Global Positioning System",
+        "b": "GPS is Global Positioning System",
+        "c": "GPS is Global Positioning System",
+        "d": "GPS is Global Positioning System"
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"

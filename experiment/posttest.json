@@ -10,10 +10,10 @@
         "d":  "Tidal"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Correct Answer. Physical Cartography map has labels for features such as mountain ranges and bodies of water. ",
+        "b": "Population density map shows population in each square mile or square kilometer of a given area by using shading or colors.",
+        "c": "A political map shows legal, jurisdictional, political, or administrative boundaries.",
+        "d": "Tidal map gives access your local water levels, tide and current predictions, and other oceanographic and meteorological conditions"
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
@@ -23,16 +23,16 @@
       "answers": {
         "a": "Scale",
         "b":  "Projection",
-        "c":  "None of the above",
-        "d":  "All of the above"
+        "c":  "Both A and B",
+        "d":  "None of the above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The scale of a map is the ratio of a distance on the map to the corresponding distance on the ground. ",
+        "b": "Projection is a set of transformations employed to represent the two-dimensional curved surface of a globe on a plane.",
+        "c": "Correct Answer. Both Scale and Projection are to ber represented on a map",
+        "d": "Both Scale and Projection are to ber represented on a map"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
@@ -44,10 +44,10 @@
         "d":  "All of the above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Correct Answer. Large scale maps represent small area of the earth on a large size of paper sheet with greater details.",
+        "b": "A medium-scale map is in between the small and large scale. For example, a map of a country, the map ranges from 1 : 600,000 to 1 : 2,000,000.",
+        "c": " A small scale map is a type of map in which a very large area like the whole country or continent or even the entire world can be represented on one sheet of paper.",
+        "d": "The cadastral maps, topographical maps and the city plans come under the category of large scale maps"
       },
       "correctAnswer": "a",
       "difficulty": "advanced"
@@ -61,10 +61,10 @@
         "d":  "None of the above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "In Choro-schematic maps the geographical phenomenon like soil, land use, vegetation are depicted by various cartographic symbols like dots, circles, triangles, initial letters of the elements."
+        "b": "Correct Answer. A Chorochromatic map is a type of thematic map that portray regions of categorical or nominal data using variations in color symbols",
+        "c": "A choropleth map is a type of statistical thematic map that uses pseudocolor",
+        "d": "Objects are shown by various colours in Chorochromatic map"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -78,10 +78,10 @@
        "d":  "50 metres"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "For a scale of 1:50,000, 1mm on map will represent 50m",
+        "b": "For a scale of 1:50,000, 1mm on map will represent 50m",
+        "c": "For a scale of 1:50,000, 1mm on map will represent 50m",
+        "d": "Correct answer. For a scale of 1:50,000, 1mm on map will represent 50m"
       },
       "correctAnswer": "d",
       "difficulty": "advanced"
@@ -93,8 +93,8 @@
         "b":  "False"
       },
       "explanations": {
-        "a": "",
-        "b": ""
+        "a": "The Prime Meridian runs through Greenwich, England",
+        "b": "Correct Answer. The Prime Meridian runs through Greenwich, England"
       },
       "correctAnswer": "b",
       "difficulty": "intermediate"
