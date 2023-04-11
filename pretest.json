@@ -1,0 +1,108 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "The distance covered by one degree of latitude is_____.",
+      "answers": {
+        "a": "69km",
+        "b": "68m",
+        "c": "79km",
+        "d": "69miles"
+      },
+      "explanations": {
+        "a": "One degree of latitude equals approximately 364,000 feet (69 miles), ",
+        "b": "One degree of latitude equals approximately 364,000 feet (69 miles), ",
+        "c": "One degree of latitude equals approximately 364,000 feet (69 miles), ",
+        "d": "Correct Answer. One degree of latitude equals approximately 364,000 feet (69 miles), "
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the equivalence of one degree of longitude?",
+      "answers": {
+        "a": "54.6 miles",
+        "b": "52 miles",
+        "c": "30 miles",
+        "d": "25 miles"
+      },
+      "explanations": {
+        "a": "Correct Answer. One-degree of longitude equals 288,200 feet (54.6 miles)",
+        "b": "One-degree of longitude equals 288,200 feet (54.6 miles)",
+        "c": "One-degree of longitude equals 288,200 feet (54.6 miles)",
+        "d": "One-degree of longitude equals 288,200 feet (54.6 miles)"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of these maps depicts the Earth as spherical?",
+      "answers": {
+        "a": "Blauver map",
+        "b": "Thematic maps",
+        "c": "Globe",
+        "d": "Topo map"
+      },
+      "explanations": {
+        "a": "",
+        "b": "A thematic map is a type of map that portrays the geographic pattern of a particular subject matter (theme) in a geographic area.",
+        "c": "Correct Answer. Globes serve purposes similar to maps, but unlike maps, they do not distort the surface that they portray ",
+        "d": "Topographic maps are detailed, accurate graphic representations of features that appear on the Earth's surface. "
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Longitudinal line is also called as _____ .",
+      "answers": {
+        "a": "Reference line",
+        "b": "Meridian",
+        "c": "Parallel",
+        "d": "Middle line"
+      },
+      "explanations": {
+        "a": "The primary reference line of latitude is the Equator, and the primary reference line of longitude is the Prime Meridian.",
+        "b": "Correct Answer. Lines of longitude, also called meridians, are imaginary lines that divide the Earth.",
+        "c": "Lines of latitude, also called parallels, are imaginary lines that divide the Earth.",
+        "d": "Middle line is the Equator, invisible line that runs around the center of the Earth at 0 degrees latitude"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A person who designs maps is called ___ .",
+      "answers": {
+        "a": "Cartographe",
+        "b": "Cartographer",
+        "c": "Mapper",
+        "d": "Spotter"
+      },
+      "explanations": {
+        "a": "Cartographer is a person who draws or produces maps",
+        "b": "Correct Answer. Cartographer is a person who draws or produces maps.",
+        "c": "Cartographer is a person who draws or produces maps",
+        "d": "Cartographer is a person who draws or produces maps"
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What does the abbreviation GPS stand for?",
+      "answers": {
+        "a": "Global Positioning System",
+        "b": "Global Point Selection",
+        "c": "Geographical Point Software",
+        "d": "Geographical Position System"
+      },
+      "explanations": {
+        "a": "Correct Answer. GPS is Global Positioning System",
+        "b": "GPS is Global Positioning System",
+        "c": "GPS is Global Positioning System",
+        "d": "GPS is Global Positioning System"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    }
+
+  ]
+}
