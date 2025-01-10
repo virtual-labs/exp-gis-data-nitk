@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "The distance covered by one degree of latitude is_____.",
+      "question": "The distance covered by one degree of latitude is ________.",
       "answers": {
         "a": "69km",
         "b": "68m",
@@ -53,7 +53,7 @@
       "difficulty": "advanced"
     },
     {
-      "question": "Longitudinal line is also called as _____ .",
+      "question": "Longitudinal line is also called as ________ .",
       "answers": {
         "a": "Reference line",
         "b": "Meridian",
@@ -70,7 +70,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "A person who designs maps is called ___ .",
+      "question": "A person who designs maps is called ________ .",
       "answers": {
         "a": "Cartographe",
         "b": "Cartographer",
@@ -103,6 +103,5 @@
       "correctAnswer": "a",
       "difficulty": "intermediate"
     }
-
   ]
 }
