@@ -13,15 +13,18 @@
    <li><a href="http://www.ngi.gov.za/index.php/technical-information/catography/what-is-cartography">http://www.ngi.gov.za/index.php/technical-information/catography/what-is-cartography</a></li>
    <li><a href="https://www.gislounge.com/whats-in-a-map/">https://www.gislounge.com/whats-in-a-map/</a></li>
    <li><a href="https://en.wikipedia.org/wiki/Cartography">https://en.wikipedia.org/wiki/Cartography</a></li>
+   <li><a href="https://youtu.be/h99z5NBSXLg">NPTEL Lecture 53 : Map composition https://youtu.be/h99z5NBSXLg 
+</a></li>
+   <li><a href="https://youtu.be/ibwN2-vblyE?feature=shared&t=330">NPTEL Lecture 19 : Maps and Numbering https://youtu.be/ibwN2-vblyE?feature=shared&t=330 </a></li>
    </ol>
   </td>
    <td>Developer : Dr. Pruthviraj U | NITK</br></br>
    Contributors :
    <ul style="list-style-type: none;">
-   <li>Akshaya | NITK</li>
    <li>Aishwarya Shetty| NITK</li>
    <li>Aishwarya Hegde| NITK</li>
    <li>Swathi Shetty| NITK</li>
+   <li>Akshaya | NITK</li>
     </ul></td>
  </tr>
 </table>
