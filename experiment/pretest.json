@@ -18,7 +18,6 @@
       "correctAnswer": "c",
       "difficulty": "advanced"
     },
-
     {
       "question": "A person who designs maps is called ________ .",
       "answers": {
@@ -37,76 +36,72 @@
       "difficulty": "advanced"
     },
     {
-      "questions": [
-        {
-          "question": "What is the primary goal of cartography in GIS?",
-          "answers": {
-            "a": "To store geographical data",
-            "b": "To visually communicate spatial information",
-            "c": "To collect spatial data from satellite imagery",
-            "d": "To perform spatial analysis on geographic features"
-          },
-          "explanations": {
-            "a": "Storing geographical data is a GIS function, but the primary role of cartography is representation, not storage.",
-            "b": "Correct Answer. The core purpose of cartography is to visually represent and communicate spatial information through maps.",
-            "c": "Data collection from satellite imagery is part of remote sensing, not cartography.",
-            "d": "Spatial analysis is performed using GIS tools, but cartography focuses on effective spatial data visualization."
-          },
-          "correctAnswer": "b",
-          "difficulty": "beginner"
-        },
-        {
-          "question": "Which of the following elements is essential in a well-designed map for effective communication?",
-          "answers": {
-            "a": "Title",
-            "b": "Legend",
-            "c": "Scale bar",
-            "d": "All of the above"
-          },
-          "explanations": {
-            "a": "A title helps identify the map's subject but is not the only essential element.",
-            "b": "A legend explains the symbols used in the map, aiding interpretation, but by itself, it’s not enough.",
-            "c": "A scale bar allows users to measure distances on the map accurately.",
-            "d": "Correct Answer. All of these elements (title, legend, and scale bar) are essential for effectively communicating the map's information."
-          },
-          "correctAnswer": "d",
-          "difficulty": "beginner"
-        },
-        {
-          "question": "In cartography, what is the purpose of a map projection?",
-          "answers": {
-            "a": "To measure distances on a map",
-            "b": "To convert 3D geographic coordinates to a 2D map",
-            "c": "To enhance the resolution of raster data",
-            "d": "To represent elevation and terrain features"
-          },
-          "explanations": {
-            "a": "Measuring distances is a use of the map but not the purpose of projection.",
-            "b": "Correct Answer. Map projections are designed to convert the Earth's 3D surface into a 2D plane, making it easier to display on flat surfaces.",
-            "c": "Enhancing resolution refers to image processing, not map projection.",
-            "d": "Representing elevation and terrain features is handled by contouring or shading, not projection."
-          },
-          "correctAnswer": "b",
-          "difficulty": "beginner"
-        },
-        {
-          "question": "What is the difference between a large-scale and a small-scale map?",
-          "answers": {
-            "a": "A large-scale map covers a larger geographic area",
-            "b": "A large-scale map shows more detail and covers a smaller area",
-            "c": "A small-scale map is used for 3D representation",
-            "d": "A small-scale map shows high-resolution raster data"
-          },
-          "explanations": {
-            "a": "Large-scale maps cover smaller areas with more detail, not larger areas.",
-            "b": "Correct Answer. A large-scale map has a smaller ratio, showing more detail and covering a smaller area.",
-            "c": "Small-scale maps are not specifically for 3D representations.",
-            "d": "Small-scale maps do not always show high-resolution data; they represent larger areas with less detail."
-          },
-          "correctAnswer": "b",
-          "difficulty": "beginner"
-        }
-      ]
+      "question": "What is the primary goal of cartography in GIS?",
+      "answers": {
+        "a": "To store geographical data",
+        "b": "To visually communicate spatial information",
+        "c": "To collect spatial data from satellite imagery",
+        "d": "To perform spatial analysis on geographic features"
+      },
+      "explanations": {
+        "a": "Storing geographical data is a GIS function, but the primary role of cartography is representation, not storage.",
+        "b": "Correct Answer. The core purpose of cartography is to visually represent and communicate spatial information through maps.",
+        "c": "Data collection from satellite imagery is part of remote sensing, not cartography.",
+        "d": "Spatial analysis is performed using GIS tools, but cartography focuses on effective spatial data visualization."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following elements is essential in a well-designed map for effective communication?",
+      "answers": {
+        "a": "Title",
+        "b": "Legend",
+        "c": "Scale bar",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "A title helps identify the map's subject but is not the only essential element.",
+        "b": "A legend explains the symbols used in the map, aiding interpretation, but by itself, it’s not enough.",
+        "c": "A scale bar allows users to measure distances on the map accurately.",
+        "d": "Correct Answer. All of these elements (title, legend, and scale bar) are essential for effectively communicating the map's information."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In cartography, what is the purpose of a map projection?",
+      "answers": {
+        "a": "To measure distances on a map",
+        "b": "To convert 3D geographic coordinates to a 2D map",
+        "c": "To enhance the resolution of raster data",
+        "d": "To represent elevation and terrain features"
+      },
+      "explanations": {
+        "a": "Measuring distances is a use of the map but not the purpose of projection.",
+        "b": "Correct Answer. Map projections are designed to convert the Earth's 3D surface into a 2D plane, making it easier to display on flat surfaces.",
+        "c": "Enhancing resolution refers to image processing, not map projection.",
+        "d": "Representing elevation and terrain features is handled by contouring or shading, not projection."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the difference between a large-scale and a small-scale map?",
+      "answers": {
+        "a": "A large-scale map covers a larger geographic area",
+        "b": "A large-scale map shows more detail and covers a smaller area",
+        "c": "A small-scale map is used for 3D representation",
+        "d": "A small-scale map shows high-resolution raster data"
+      },
+      "explanations": {
+        "a": "Large-scale maps cover smaller areas with more detail, not larger areas.",
+        "b": "Correct Answer. A large-scale map has a smaller ratio, showing more detail and covering a smaller area.",
+        "c": "Small-scale maps are not specifically for 3D representations.",
+        "d": "Small-scale maps do not always show high-resolution data; they represent larger areas with less detail."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
     }
   ]
 }
