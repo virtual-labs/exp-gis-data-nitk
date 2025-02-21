@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SOLVE</title>
+<link rel="stylesheet" href="./css/cart.css" />
+
+
+<script>
+let simsubscreennum=1;
+let temp=0;
+
+
+</script>
+</head>
+
+<body style="margin:0; font-family:verdana;">
+<div id="simscreen">
+    <div class="parentPopup" id="parentPopup" onclick="closeModal(event)">
+        <div class="popup" id="popUpContent">      
+        </div>
+    </div>
+<div id="title"><h3>Cartography of GIS data</h3></div>
+<div class="simsubscreen" id="canvas0" >
+<h4 class="incanvas">Objective:</h4>
+<p class="incanvas" style="font-size:14px;"> To perform the cartography of the given Digital Elevation Model (DEM) map and to ensure the desired amount of knowledge in its spatial relationship.</p><br/>
+<img style="position:absolute; left: 200px;top:100px;" src="./images/cartography.png" width="300" height="400" title="Cartography" alt=""/>
+&nbsp;<span class="desc" style="border-bottom:1px dotted ; color:red;text-align:justify">Description
+<span class="desctext">
+<p><strong style="color:red;">Essential elements of a Map</strong>: Different elements of a map play an important role in describing map details. These essential features of a map are found on almost every map around us. They are- title, legend(symbols), north arrows, distance(scale), labels, grids and index– which make it easier for users to understand the basic components of maps.</p>
+</span>
+</span>
+</div>
+<div class="simsubscreen" id="canvas1" style="visibility:hidden;">
+    <!-- <button onclick="showPopup(this);" id="act1" class="tooltip" >Define Projections<span class="info" onmouseover="showInfo(this)" onmouseout="hideInfo(this)"><img src="./images/information-button.png" ></span></button> -->
+    <div class="divSettings">
+        <p class="settings" id="colorRamp" onclick="showPopup(this);">Symbology</p>
+        <p class="settings" id="view" onclick="showPopup(this);">View</p>
+        <p class="settings lockSettings" id="mapTitle" onclick="if(viewSet && blink==0){showPopup(this);}">Title<span class="info" onmouseover="showInfo(this)" onmouseout="hideInfo(this)"><img src="./images/information-button.png" ></span></p>
+        <p class="settings lockSettings" id="northArrow" onclick="if(viewSet && blink==0){showPopup(this);}">North Arrow<span class="info" onmouseover="showInfo(this)" onmouseout="hideInfo(this)"><img src="./images/information-button.png" ></span></p>
+        <p class="settings lockSettings" id="newGrid" onclick="if(viewSet){showPopup(this);}">Grids<span class="info" onmouseover="showInfo(this)" onmouseout="hideInfo(this)"><img src="./images/information-button.png" ></span></p>
+        <p class="settings lockSettings" id="legend" onclick="if(viewSet && blink==0){showPopup(this);}">Legend<span class="info" onmouseover="showInfo(this)" onmouseout="hideInfo(this)"><img src="./images/information-button.png" ></span></p>
+        <p class="settings lockSettings" id="scaleBar" onclick="if(viewSet && blink==0){showPopup(this);}">Scale Bar<span class="info" onmouseover="showInfo(this)" onmouseout="hideInfo(this)"><img src="./images/information-button.png" ></span></p>
+    </div>
+
+    <div class="mapScreen" style="text-align:center">
+        <img id="outsideBorder" src="./images/2.png" style="visibility:hidden;" />
+        <img id="mapImage" src="./images/color1.png" style="position:absolute;left: 125px;top:140px"/>
+        <img id="coordImage" src="./images/c2020.png" style="position:absolute;left: 76px;top:10px; visibility: hidden"/>
+        <div id="boxAll" class="setFont" draggable="true" ondragstart="return dragStart(event)"></div>
+        <div id="boxTitle" class="setFont" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">Title</div>
+        <div id="boxNorthArrow" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">North Arrow</div>
+        <div id="boxScaleBar" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">Scale Bar</div>
+        <div id="boxLegend" ondragenter="return dragEnter(event)" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">Legend</div>
+    </div>
+</div>
+</div>
+
+<div id="tooltiptext"></div>
+<div id="info" style="position: absolute;top:40px;left:200px;font-size: 12px;font-family: verdana; color: rgb(117, 114, 114);"></div>
+
+<!-- nextButton -->
+<div id="nav">
+    <img id="nextButton" onclick="goToMainPage()" src="images/Next.png" />
+</div> 
+    <div id="copyright"> &copy; 2020 - <script>document.write(new Date().getFullYear())</script> SOLVE - The Virtual Lab @ NITK Surathkal, Department of Water Resources & Ocean Engineering</div>
+</div>
+<script type="text/javascript" src="./js/cart.js"></script>
+
+<script src="../assets/js/iframeResize.js"></script>
+        
+        </body> 
+</html>

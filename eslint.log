@@ -1,0 +1,31 @@
+
+/home/runner/work/exp-gis-data-nitk/exp-gis-data-nitk/experiment/simulation/js/cart.js
+    5:5   warning  'northArrowSet' is assigned a value but never used  no-unused-vars
+    6:5   warning  'titleSet' is assigned a value but never used       no-unused-vars
+   49:10  warning  'showPopup' is defined but never used               no-unused-vars
+   54:10  warning  'closeModal' is defined but never used              no-unused-vars
+   66:10  warning  'goToMainPage' is defined but never used            no-unused-vars
+   72:1   warning  'colors' is not defined                             no-undef
+   75:10  warning  'colors' is not defined                             no-undef
+   76:59  warning  'colors' is not defined                             no-undef
+   79:10  warning  'showInfo' is defined but never used                no-unused-vars
+   93:10  warning  'hideInfo' is defined but never used                no-unused-vars
+  127:10  warning  'dragStart' is defined but never used               no-unused-vars
+  133:10  warning  'dragEnter' is defined but never used               no-unused-vars
+  137:10  warning  'dragOver' is defined but never used                no-unused-vars
+  137:19  warning  'ev' is defined but never used                      no-unused-vars
+  140:10  warning  'dragDrop' is defined but never used                no-unused-vars
+  141:7   warning  'src' is assigned a value but never used            no-unused-vars
+  167:10  warning  'selectColor' is defined but never used             no-unused-vars
+  215:10  warning  'setDragTitle' is defined but never used            no-unused-vars
+  215:23  warning  'ev' is defined but never used                      no-unused-vars
+  268:10  warning  'setCheckedView' is defined but never used          no-unused-vars
+  307:10  warning  'selectArrow' is defined but never used             no-unused-vars
+  353:10  warning  'selectScale' is defined but never used             no-unused-vars
+  391:10  warning  'selectLegend' is defined but never used            no-unused-vars
+  513:10  warning  'setCoordinatesX' is defined but never used         no-unused-vars
+  524:10  warning  'setCoordinatesY' is defined but never used         no-unused-vars
+  536:10  warning  'setCoordinates' is defined but never used          no-unused-vars
+
+✖ 26 problems (0 errors, 26 warnings)
+
