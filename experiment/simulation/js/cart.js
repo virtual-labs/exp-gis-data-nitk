@@ -11,106 +11,123 @@ let viewOptionsSet = " ";
 let xCood = 0;
 let yCood = 0;
 let settingsControl = [
-  {id: "view", clicked: false},
-  {id: "northArrow", clicked: false},
-  {id: "mapTitle", clicked: false},
-  {id: "legend", clicked: false}, 
-  {id: "scaleBar", clicked: false}
+  { id: "view", clicked: false },
+  { id: "northArrow", clicked: false },
+  { id: "mapTitle", clicked: false },
+  { id: "legend", clicked: false },
+  { id: "scaleBar", clicked: false },
 ];
 
 let settingsDescription = [
-  {id: "newGrid", heading: "Grids", desc: "A grid and index are common in an atlas and on roadmaps. A grid represents a series of horizontal and vertical lines running across the map whereas index helps the map reader find a particular location by following the numbers and letters in the grid."},
-  {id: "northArrow",heading: "North Arrow",  desc: "The purpose of the north arrow is for orientation. This enables the viewer to determine the map's direction in relation to the true north. Most maps tend to be oriented so that due north faces the top of the page. "},
-  {id: "mapTitle",heading: "Map Title", desc: "The title of a map is one of its vital features. The title is significant because it provides a concise description of the map's subject matter to the viewer right away.  "},
-  {id: "legend",heading: "Legend", desc: "The legend serves as the decoder for the symbology in the data frame. Therefore, it is also commonly known as the key. Descriptions detailing any colour schemata, symbology or categorization is explained here. "}, 
-  {id: "scaleBar",heading: "Scale Bar", desc: "The scale explains the relationship of the data frame extent to the real world. The description is a ratio. This can be shown either as a unit to unit or as one measurement to another measurement. Therefore a scale showing a 1:10,000 scale means that every one paper map unit represents 10,000 real-world units."}
-]
+  {
+    id: "newGrid",
+    heading: "Grids",
+    desc: "A grid and index are common in an atlas and on roadmaps. A grid represents a series of horizontal and vertical lines running across the map whereas index helps the map reader find a particular location by following the numbers and letters in the grid.",
+  },
+  {
+    id: "northArrow",
+    heading: "North Arrow",
+    desc: "The purpose of the north arrow is for orientation. This enables the viewer to determine the map's direction in relation to the true north. Most maps tend to be oriented so that due north faces the top of the page. ",
+  },
+  {
+    id: "mapTitle",
+    heading: "Map Title",
+    desc: "The title of a map is one of its vital features. The title is significant because it provides a concise description of the map's subject matter to the viewer right away.  ",
+  },
+  {
+    id: "legend",
+    heading: "Legend",
+    desc: "The legend serves as the decoder for the symbology in the data frame. Therefore, it is also commonly known as the key. Descriptions detailing any colour schemata, symbology or categorization is explained here. ",
+  },
+  {
+    id: "scaleBar",
+    heading: "Scale Bar",
+    desc: "The scale explains the relationship of the data frame extent to the real world. The description is a ratio. This can be shown either as a unit to unit or as one measurement to another measurement. Therefore a scale showing a 1:10,000 scale means that every one paper map unit represents 10,000 real-world units.",
+  },
+];
 
-function showPopup(ele){
-    document.getElementById("parentPopup").style.display = "block";
-    displayOptions(ele);
+function showPopup(ele) {
+  document.getElementById("parentPopup").style.display = "block";
+  displayOptions(ele);
 }
 
-function closeModal(ev){
-    if(ev.target.className == "parentPopup" || ev.target.className == "close" || ev.target.className == "cancel" || controlOK == true) {
-        controlOK = false;
-        document.getElementById("parentPopup").style.display = "none";
-    }
+function closeModal(ev) {
+  if (
+    ev.target.className == "parentPopup" ||
+    ev.target.className == "close" ||
+    ev.target.className == "cancel" ||
+    controlOK == true
+  ) {
+    controlOK = false;
+    document.getElementById("parentPopup").style.display = "none";
+  }
 }
 
-
-function goToMainPage(){
-    document.getElementById("canvas0").style.visibility = "hidden";
-    document.getElementById("canvas1").style.visibility = "visible";
-    document.getElementById("nextButton").style.visibility = "hidden";
+function goToMainPage() {
+  document.getElementById("canvas0").style.visibility = "hidden";
+  document.getElementById("canvas1").style.visibility = "visible";
+  document.getElementById("nextButton").style.visibility = "hidden";
 }
 
-colors = new Array('lightgrey', 'grey');
+colors = new Array("lightgrey", "grey");
 
-function highlightOn(tic){
-    tic %= colors.length;
-    document.getElementById(blinkDivId).style.borderColor = colors[tic];   
-    blink = setTimeout("highlightOn("+(tic+1)+")", 200);
-} 
+function highlightOn(tic) {
+  tic %= colors.length;
+  document.getElementById(blinkDivId).style.borderColor = colors[tic];
+  blink = setTimeout("highlightOn(" + (tic + 1) + ")", 200);
+}
 function showInfo(ele) {
-  const found = settingsDescription.find(function(setting){
-    return setting.id === ele.parentNode.id
+  const found = settingsDescription.find(function (setting) {
+    return setting.id === ele.parentNode.id;
   });
   found.visibility = true;
-  found.visibility == true?
-  (
-    document.getElementById("tooltiptext").style.visibility = "visible",
-    document.getElementById("tooltiptext").innerHTML = `<h3>${found.heading}</h3><p>${found.desc}</p> 
-    `
-      
-  )
-  :document.getElementById("tooltiptext").style.visibility = "hidden";
+  found.visibility == true
+    ? ((document.getElementById("tooltiptext").style.visibility = "visible"),
+      (document.getElementById(
+        "tooltiptext"
+      ).innerHTML = `<h3>${found.heading}</h3><p>${found.desc}</p> 
+    `))
+    : (document.getElementById("tooltiptext").style.visibility = "hidden");
 }
 
-
-
-function hideInfo(ele){
-  const found = settingsDescription.find(function(setting){
-    return setting.id === ele.parentNode.id
+function hideInfo(ele) {
+  const found = settingsDescription.find(function (setting) {
+    return setting.id === ele.parentNode.id;
   });
   found.visibility = false;
-  found.visibility == true?document.getElementById("tooltiptext").style.visibility = "visible":
-  document.getElementById("tooltiptext").style.visibility = "hidden"
-
+  found.visibility == true
+    ? (document.getElementById("tooltiptext").style.visibility = "visible")
+    : (document.getElementById("tooltiptext").style.visibility = "hidden");
 }
 
 function displayOptions(ele) {
-  if(ele.id == "colorRamp"){
+  if (ele.id == "colorRamp") {
     setColorRamp();
   }
-  if(ele.id == "view"){
+  if (ele.id == "view") {
     setView();
   }
-  if(ele.id == "mapTitle"){
+  if (ele.id == "mapTitle") {
     setTitle();
   }
-  if(ele.id == "northArrow"){
+  if (ele.id == "northArrow") {
     setNorthArrow();
   }
-  if(ele.id == "scaleBar"){
+  if (ele.id == "scaleBar") {
     setScaleBar();
   }
-  if(ele.id == "legend"){
+  if (ele.id == "legend") {
     setLegend();
   }
-  if(ele.id == "newGrid"){
+  if (ele.id == "newGrid") {
     setNewGrid();
   }
 }
 
-
-
-
-
 function dragStart(ev) {
-  ev.dataTransfer.effectAllowed='move';
-  ev.dataTransfer.setData("Text", ev.target.getAttribute('id'));
-  ev.dataTransfer.setDragImage(ev.target,0,0);
+  ev.dataTransfer.effectAllowed = "move";
+  ev.dataTransfer.setData("Text", ev.target.getAttribute("id"));
+  ev.dataTransfer.setDragImage(ev.target, 0, 0);
   return true;
 }
 function dragEnter(ev) {
@@ -122,16 +139,16 @@ function dragOver(ev) {
 }
 function dragDrop(ev) {
   let src = ev.dataTransfer.getData("Text");
-  if(ev.target.id){
-    document.getElementById(ev.target.id).innerHTML = document.getElementById("boxAll").innerHTML; 
+  if (ev.target.id) {
+    document.getElementById(ev.target.id).innerHTML =
+      document.getElementById("boxAll").innerHTML;
     unsetStyles(ev.target.id);
     document.getElementById("boxAll").innerHTML = " ";
-  ev.stopPropagation();
-  return false;
+    ev.stopPropagation();
+    return false;
   }
-  
 }
-function setColorRamp(){
+function setColorRamp() {
   document.getElementById("popUpContent").innerHTML = `
   <div  class="heading">
     <p class="optTitle">Select Color Ramp <span class="close"
@@ -144,36 +161,41 @@ function setColorRamp(){
       <div class="flexImg" style="padding: 5px" id="color3" onclick="selectColor(this)"><span><img src="./images/colorRamp3.png" /></span></div>  
     </div>
   </div>
-  `
+  `;
 }
 
-
-function selectColor(ele){
+function selectColor(ele) {
   controlOK = true;
   colorSet = ele.id == "color1" ? 1 : ele.id == "color2" ? 2 : 3;
-  document.getElementById("mapImage").src="./images/"+ele.id+".png";
-  legendOnSymbology = ele.id == "color1" || ele.id == ""? 
-  `<div class="flex-container">
+  document.getElementById("mapImage").src = "./images/" + ele.id + ".png";
+  legendOnSymbology =
+    ele.id == "color1" || ele.id == ""
+      ? `<div class="flex-container">
       <div class="flexImg"><span><img id="legend1" src="images/legend1.png" onclick="selectLegend(this)"/></span></div>  
       <div class="flexImg locked"><span><img id="legend2" src="images/legend2.png" disabled/></span></div>  
       <div class="flexImg locked"><span><img id="legend3"  src="images/legend3.png" disabled/></span></div>  
-    </div>` : ele.id == "color2" ?
-    `<div class="flex-container">
+    </div>`
+      : ele.id == "color2"
+      ? `<div class="flex-container">
       <div class="flexImg locked"><span><img id="legend1" src="images/legend1.png" disabled/></span></div>  
       <div class="flexImg"><span><img id="legend2" src="images/legend2.png" onclick="selectLegend(this)"/></span></div>  
       <div class="flexImg locked" ><span><img id="legend3" src="images/legend3.png" disabled/></span></div>  
-  </div>` :
-  `<div class="flex-container">
+  </div>`
+      : `<div class="flex-container">
     <div class="flexImg locked"><span><img id="legend1"  src="images/legend1.png" disabled/></span></div>  
     <div class="flexImg locked"><span><img id="legend2"  src="images/legend2.png" disabled/></span></div>  
     <div class="flexImg"><span><img id="legend3" src="images/legend3.png" onclick="selectLegend(this)"/></span></div>  
 </div>`;
-  if(document.getElementById("boxLegend").innerHTML != "Legend" && document.getElementById("boxLegend").style.visibility== "visible" ){
-    document.getElementById("boxLegend").innerHTML = "<img src='./images/legend"+colorSet+".png' />"; 
+  if (
+    document.getElementById("boxLegend").innerHTML != "Legend" &&
+    document.getElementById("boxLegend").style.visibility == "visible"
+  ) {
+    document.getElementById("boxLegend").innerHTML =
+      "<img src='./images/legend" + colorSet + ".png' />";
   }
 }
 
-function setTitle(){
+function setTitle() {
   document.getElementById("popUpContent").innerHTML = `
     <div  class="heading">
       <p class="optTitle">Insert Title <span class="close"
@@ -181,53 +203,55 @@ function setTitle(){
     </div>
     <div class="titleContent">
       <p>What title would you like to give your map?</p>
-      <input type="text" id="cartTitle" maxlength = "12"/>
+      <input type="text" id="cartTitle" maxlength = "20"/>
       <div class="titleButton">
         <input class="OK" type="button" value="OK" onclick="setDragTitle(event)"/>
         <input class="cancel" type="button" value="Cancel" onclick="closeModal(event)"/>
       </div>
     </div>
-  `
+  `;
 }
 
-function setDragTitle(ev){
+function setDragTitle(ev) {
   var cartiographyTitle = document.getElementById("cartTitle");
-  if(cartiographyTitle.value !== "") {
+  if (cartiographyTitle.value !== "") {
     controlOK = true;
-    document.getElementById("boxAll").style.visibility = "visible"; 
-    document.getElementById("boxAll").innerHTML = `<span>${cartiographyTitle.value}</span>` ; 
-    document.getElementById("boxTitle").style.visibility = "visible"; 
-    document.getElementById("info").innerHTML = "Drag the content to the highlighted location";
+    document.getElementById("boxAll").style.visibility = "visible";
+    document.getElementById(
+      "boxAll"
+    ).innerHTML = `<span>${cartiographyTitle.value}</span>`;
+    document.getElementById("boxTitle").style.visibility = "visible";
+    document.getElementById("info").innerHTML =
+      "Drag the content to the highlighted location";
     titleSet = true;
   } else {
-    cartiographyTitle.placeholder = "Please enter title"
+    cartiographyTitle.placeholder = "Please enter title";
   }
   blinkDivId = "boxTitle";
   highlightOn(0);
   disableOnEventOver("mapTitle");
 }
 
-
-
-function unsetStyles(destId){
+function unsetStyles(destId) {
   clearInterval(blink);
   blink = 0;
-  document.getElementById("boxAll").style.visibility = "hidden"
-  document.getElementById("boxAll").draggable="true"; 
-  document.getElementById("boxAll").ondragstart="return dragStart(event)";
+  document.getElementById("boxAll").style.visibility = "hidden";
+  document.getElementById("boxAll").draggable = "true";
+  document.getElementById("boxAll").ondragstart = "return dragStart(event)";
   document.getElementById(destId).style.border = "none";
   document.getElementById(destId).style.color = "black";
   document.getElementById(destId).style.background = "none";
   document.getElementById("info").innerHTML = "";
 }
 
-viewOptionsSet = viewSet == false ?
-` <p><input id="dView" type="radio" value="dataView" name="view" checked/>Data View</p>
-<p><input id="lView" type="radio" value="layoutView" name="view"/>Layout View</p>`: 
-` <p><input id="dView" type="radio" value="dataView" name="view"/>Data View</p>
+viewOptionsSet =
+  viewSet == false
+    ? ` <p><input id="dView" type="radio" value="dataView" name="view" checked/>Data View</p>
+<p><input id="lView" type="radio" value="layoutView" name="view"/>Layout View</p>`
+    : ` <p><input id="dView" type="radio" value="dataView" name="view"/>Data View</p>
 <p><input id="lView" type="radio" value="layoutView" name="view" checked/>Layout View</p>`;
 
-function setView(){
+function setView() {
   document.getElementById("popUpContent").innerHTML = `
     <div  class="heading">
       <p class="optTitle">Choose View <span class="close"
@@ -238,24 +262,27 @@ function setView(){
       <p><input type="button" value="OK" onclick="setCheckedView()"/></p>
       <p id="alertView"></p>
     </div>
-    `
+    `;
 }
 
-function setCheckedView(){
-  viewSet = document.getElementById("dView").checked ? false: true;
-  controlOK = (document.getElementById("dView").checked == false && document.getElementById("lView").checked == false) ? false:true;
-  if(viewSet == true){
+function setCheckedView() {
+  viewSet = document.getElementById("dView").checked ? false : true;
+  controlOK =
+    document.getElementById("dView").checked == false &&
+    document.getElementById("lView").checked == false
+      ? false
+      : true;
+  if (viewSet == true) {
     document.getElementById("outsideBorder").src = "./images/2.png";
     document.getElementById("outsideBorder").style.visibility = "visible";
     disableSettingOptions();
-    disableOnEventOver('view')
+    disableOnEventOver("view");
   } else {
     enableSettingOptions();
   }
-
 }
 
-function setNorthArrow(){
+function setNorthArrow() {
   document.getElementById("popUpContent").innerHTML = `
   <div  class="heading">
     <p class="optTitle">Insert North Arrow <span class="close"
@@ -274,36 +301,37 @@ function setNorthArrow(){
     </div>
     <p id="arrowWarning"></p>
   </div>
-  `
+  `;
 }
 
-function selectArrow(ele){
-  let arrow = ele.id
+function selectArrow(ele) {
+  let arrow = ele.id;
   // switch(arrow){
   //   case "n1": northArrow = 1; break;
   //   case "n2": northArrow = 2; break;
   //   case "n3": northArrow = 3; break;
   // }
-  northArrow = arrow == "n1"? 1 : arrow == "n2" ? 2 : 3;
+  northArrow = arrow == "n1" ? 1 : arrow == "n2" ? 2 : 3;
   northArrowSet = true;
-  if(northArrow !== 0 ) {
+  if (northArrow !== 0) {
     controlOK = true;
-    document.getElementById("boxAll").style.visibility = "visible"; 
-    document.getElementById("boxAll").innerHTML = "<img src='./images/ar"+northArrow+".png' />"; 
-    document.getElementById("boxNorthArrow").style.visibility = "visible"; 
-    document.getElementById("info").innerHTML = "Drag the content to the highlighted location";
-    document.getElementById("arrowWarning").innerHTML = ""
+    document.getElementById("boxAll").style.visibility = "visible";
+    document.getElementById("boxAll").innerHTML =
+      "<img src='./images/ar" + northArrow + ".png' />";
+    document.getElementById("boxNorthArrow").style.visibility = "visible";
+    document.getElementById("info").innerHTML =
+      "Drag the content to the highlighted location";
+    document.getElementById("arrowWarning").innerHTML = "";
   } else {
-    document.getElementById("arrowWarning").innerHTML = "Please choose a North Arrow"
+    document.getElementById("arrowWarning").innerHTML =
+      "Please choose a North Arrow";
   }
   blinkDivId = "boxNorthArrow";
   highlightOn(0);
-  disableOnEventOver('northArrow');
-
+  disableOnEventOver("northArrow");
 }
 
-
-function setScaleBar(){
+function setScaleBar() {
   document.getElementById("popUpContent").innerHTML = `
   <div  class="heading">
     <p class="optTitle">Insert Scale Bar <span class="close"
@@ -319,28 +347,30 @@ function setScaleBar(){
       <div>Scale Bar 2</div>
     </div>
   </div>
-  `
+  `;
 }
 
-function selectScale(ele){
-  let scale = ele.id
+function selectScale(ele) {
+  let scale = ele.id;
   controlOK = true;
-  document.getElementById("boxAll").style.visibility = "visible"; 
-  document.getElementById("boxAll").innerHTML = "<img src='./images/"+scale+".png' />"; 
-  document.getElementById("boxScaleBar").style.visibility = "visible"; 
-  document.getElementById("info").innerHTML = "Drag the content to the highlighted location";
+  document.getElementById("boxAll").style.visibility = "visible";
+  document.getElementById("boxAll").innerHTML =
+    "<img src='./images/" + scale + ".png' />";
+  document.getElementById("boxScaleBar").style.visibility = "visible";
+  document.getElementById("info").innerHTML =
+    "Drag the content to the highlighted location";
   blinkDivId = "boxScaleBar";
   highlightOn(0);
-  disableOnEventOver('scaleBar');
+  disableOnEventOver("scaleBar");
 }
 
-function setLegend(){
-  if(legendOnSymbology == ""){
+function setLegend() {
+  if (legendOnSymbology == "") {
     legendOnSymbology = `<div class="flex-container">
       <div class="flexImg"><span><img id="legend1" src="images/legend1.png" onclick="selectLegend(this)"/></span></div>  
       <div class="flexImg locked"><span><img id="legend2" src="images/legend2.png" disabled/></span></div>  
       <div class="flexImg locked"><span><img id="legend3"  src="images/legend3.png" disabled/></span></div>  
-    </div>` 
+    </div>`;
   }
   document.getElementById("popUpContent").innerHTML = `
   <div  class="heading">
@@ -355,23 +385,26 @@ function setLegend(){
       <div>Legend 3</div>
     </div>
   </div>
-  `
+  `;
 }
 
-function selectLegend(ele){
-  let legend = ele.id
+function selectLegend(ele) {
+  let legend = ele.id;
   controlOK = true;
-  document.getElementById("boxAll").style.visibility = "visible"; 
-  document.getElementById("boxAll").innerHTML = "<img src='./images/"+legend+".png' />"; 
-  document.getElementById("boxLegend").style.visibility = "visible"; 
-  document.getElementById("info").innerHTML = "Drag the content to the highlighted location";
+  document.getElementById("boxAll").style.visibility = "visible";
+  document.getElementById("boxAll").innerHTML =
+    "<img src='./images/" + legend + ".png' />";
+  document.getElementById("boxLegend").style.visibility = "visible";
+  document.getElementById("info").innerHTML =
+    "Drag the content to the highlighted location";
   blinkDivId = "boxLegend";
   highlightOn(0);
-  disableOnEventOver('legend');
+  disableOnEventOver("legend");
 }
 
-function setNewGrid(){
-  xCood = 0; yCood = 0;
+function setNewGrid() {
+  xCood = 0;
+  yCood = 0;
   document.getElementById("popUpContent").innerHTML = `
   <div  class="heading">
     <p class="optTitle">Choose Reference System Properties <span class="close"
@@ -448,10 +481,10 @@ function setNewGrid(){
     </fieldset>
     </div>
   </div>
-  `
+  `;
 }
 
-function disableSettingOptions(){
+function disableSettingOptions() {
   let settingOptions = document.getElementsByClassName("lockSettings");
   settingOptions.mapTitle.classList.remove("lockSettings");
   settingOptions.northArrow.classList.remove("lockSettings");
@@ -460,7 +493,7 @@ function disableSettingOptions(){
   settingOptions.newGrid.classList.remove("lockSettings");
 }
 
-function enableSettingOptions(){
+function enableSettingOptions() {
   document.getElementById("mapTitle").classList.add("lockSettings");
   document.getElementById("northArrow").classList.add("lockSettings");
   document.getElementById("scaleBar").classList.add("lockSettings");
@@ -468,31 +501,31 @@ function enableSettingOptions(){
   document.getElementById("newGrid").classList.add("lockSettings");
 }
 
-function disableOnEventOver(id){
-  settingsControl.filter(function(setting){
-    if(setting.id == id){
+function disableOnEventOver(id) {
+  settingsControl.filter(function (setting) {
+    if (setting.id == id) {
       document.getElementById(id).classList.add("lockSettings");
       document.getElementById(id).onclick = "";
     }
-  })
+  });
 }
 
-function setCoordinatesX(ele){
-  if(ele.value != 0){
+function setCoordinatesX(ele) {
+  if (ele.value != 0) {
     xCood = ele.value;
     document.getElementById("intervalX").value = xCood;
-    if(yCood != 0){
+    if (yCood != 0) {
       document.getElementById("coButton").disabled = false;
     }
   } else {
     xCood = 0;
   }
 }
-function setCoordinatesY(ele){
-  if(ele.value != 0){
+function setCoordinatesY(ele) {
+  if (ele.value != 0) {
     yCood = ele.value;
     document.getElementById("intervalY").value = yCood;
-    if(xCood != 0){
+    if (xCood != 0) {
       document.getElementById("coButton").disabled = false;
     }
   } else {
@@ -500,10 +533,12 @@ function setCoordinatesY(ele){
   }
 }
 
-function setCoordinates(){
-  if(xCood != 0 && yCood != 0){
+function setCoordinates() {
+  if (xCood != 0 && yCood != 0) {
     document.getElementById("coordImage").style.visibility = "visible";
-    document.getElementById("coordImage").src = `./images/c${xCood}${yCood}.png`;
+    document.getElementById(
+      "coordImage"
+    ).src = `./images/c${xCood}${yCood}.png`;
     controlOK = true;
   }
 }
